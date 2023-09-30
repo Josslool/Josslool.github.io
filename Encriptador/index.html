@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="utf-8">
+      <title>Encriptador</title>
+      <link href="style.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet" type="text/css">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+
+    <body> 
+      
+      <main> 
+        <div class="div__heading">
+        <img src="Imagenes/line 1.png">
+        <h1>ENCRIPTADOR DE TEXTO</h1>
+        </div>
+
+        <div class="div">
+          <div class="div__bloqueUno">
+              <textarea placeholder="Ingrese el texto aquí..." class="bloqueUno__entrada" id="entradaT"></textarea>
+            <div class="bloqueUno__user">
+                <div class="div__adv">
+                  <img src="Imagenes/signo.png" class="adv__signo">
+                  <p class="adv__letra">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="div__btn">
+                  <button class="btn__encriptar" id="encriptarbtn">Encriptar</button>
+                  <button class="btn__desencriptar" id="desencriptarbtn">Desencriptar</button>
+                  <button class="btn__limpiar" id="limpiarbtn">Limpiar</button>
+                </div>
+            </div>
+          </div>
+          <div class="div__bloqueDos" id="salidaT">
+            <img src="Imagenes/FiguraPersona.png" class="bloqueDos__imagen">
+              <div class="bloqueDos__tx">
+                <strong><p class="tx__uno">Ningún mensaje fue encontrado</p></strong>
+                <p class="tx__dos">Ingresa el texto que desees encriptar o desencriptar</p>
+                <!-- <textarea class="bloqueDos__entrada"></textarea> -->
+              </div>
+          </div>
+        </div>
+
+      </main>
+
+      <div class="separador"></div>
+
+      <footer class="div__footer">
+        <img src="Imagenes/aluraLogo.png" alt="Logo de alura" class="footer__logo">
+        <img src="Imagenes/Line 2.png" class="footer__line">
+        <div class="footer__text">
+          <p>Elaborado por Josseline Lool</p>
+          <p>Alura One Next Education</p>
+        </div>
+        <div class="footer__logotwo">
+          <a href="x" target="_blank"><img src="Imagenes/Linkedin.png" alt="linkedin"></a>
+          <a href="x" target="_blank"><img src="Imagenes/Github.png" alt="github"></a>
+        </div>
+       
+      </footer>
+
+      <script src="script.js"></script>
+    
+    </body>
+</html>
