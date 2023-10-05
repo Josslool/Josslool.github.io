@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1>Repaso de IMC</h1>
+        <h3>con condicionales</h3>
+       
+        <script>
+            function saltodelinea(){
+                document.write("<br><br>");
+            }
+
+            function imprimir(frase){
+                document.write(frase);
+                saltodelinea();
+            }
+
+            function calculoIMC(peso,altura){
+                return (peso/(altura * altura));
+            }
+
+            let nombredelaPersona = prompt("Buen día, por favor ingrese su nombre");
+            let pesodelaPersona = parseInt(prompt("Gracias " + nombredelaPersona + ", a continuación ingrese su peso en kilogramos"));
+            let alturadelaPersona = parseFloat(prompt("Y por último, ingrese su altura"));
+
+            imcCalculado = calculoIMC(pesodelaPersona,alturadelaPersona);
+
+            imprimir(nombredelaPersona + " Tu IMC es: " + imcCalculado);
+
+            //condiciones
+
+            if(imcCalculado < 18.5){
+                imprimir("Usted tiene bajo peso");
+            }
+
+            if(imcCalculado >= 18.5){
+                if(imcCalculado < 25){
+                    imprimir("Su peso es normal, Felicidades");
+                }
+                
+            }
+
+            if(imcCalculado >= 25){
+                if(imcCalculado < 30){ 
+                    imprimir("Usted tiene sobrepeso");
+                }
+                
+            }
+
+            if(imcCalculado >= 30){
+                if(imcCalculado < 40){ 
+                    imprimir("Usted tiene obesidad");
+                }
+                
+            }
+
+        </script>
+    </body>
+</html>
