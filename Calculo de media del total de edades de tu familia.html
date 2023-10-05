@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h2>MEDIA DE EDADES DE TUS FAMILIARES</h2>
+
+        <script>
+            function imprimir(frase){
+                document.write(frase);
+            }
+
+            let tuNombre = prompt("Hola, bienvenido/a a mi programa. Por favor ingresa tu nombre."); 
+
+            let miembrosdelaFamilia = parseInt(prompt("Hola " + tuNombre + " Ingresa la cantidad de miembros que hay en tu familia."));
+            let edadesdelaFamilia= 0;
+            let contador = 1
+
+            while (contador <= miembrosdelaFamilia){
+                edad = parseInt(prompt("Gracias " + tuNombre + ", Ahora ingresa las edades de todos los miembros de tu familia. Ingresa una a la vez."));
+                edadesdelaFamilia = edadesdelaFamilia + edad;
+                contador = contador + 1;
+            }
+
+            let mensaje = alert("Gracias " + tuNombre + " A continuación vamos a calcular la media de las edades en tu familia")
+
+            let mediadeFamilia = Math.round(edadesdelaFamilia/miembrosdelaFamilia);
+
+            imprimir(tuNombre + ", la media de las edades de tu familia es " + mediadeFamilia);
+
+        </script>
+    </body>
+</html>
